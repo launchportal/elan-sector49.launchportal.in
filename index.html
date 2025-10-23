@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELAN 49 | Luxury 4BHK Apartments & Penthouses on Sohna Road, Sector 49</title>
+    
+    <meta name="description" content="Discover ELAN 49, a new launch of exclusive, low-density luxury 4BHK apartments and penthouses (4500 - 8500 sqft) on Sohna Road, Sector 49. Only 2 units per floor. Connect now for pre-launch details.">
+    
+    <meta name="keywords" content="ELAN 49, Elan Sector 49, Sohna Road Apartments, Luxury Apartments Gurgaon, New Launch 4BHK, 4500 sqft apartments, Penthouses Sohna Road, Vatika Business Park Residential, A+ Grade Developer Gurgaon">
+    
+    <style>
+        /* --- General Reset & Typography --- */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #28a745;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+            --font-family: 'Arial', sans-serif;
+            --max-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 0 15px;
+            overflow: hidden;
+        }
+        
+        /* Add padding to the top of the body to prevent content from hiding behind the fixed header */
+        body {
+            padding-top: 80px; /* Adjust this value to match the header height + padding */
+        }
+
+        /* --- Dedicated Fixed Header for Logo --- */
+        .main-header {
+            position: fixed; /* Keeps the header visible when scrolling */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 100; /* Ensures it is on top of all other content */
+            padding: 15px 0;
+        }
+
+        /* LOGO PLACEMENT STYLES */
+        .logo-placeholder img {
+            height: 50px; /* Standard logo height */
+            /* width: auto; */
+        }
+
+        .logo-placeholder .logo-text {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+
+        /* --- Main Banner (Hero Section) --- */
+        .hero {
+            position: relative;
+            width: 100%;
+            /* Use calc to ensure full screen coverage minus the header height */
+            height: calc(100vh - 80px); 
+            background: url('image_272b1d.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: -80px; /* Pull the hero up to fill the space where the fixed header is */
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 5;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 5em;
+            margin-bottom: 0.1em;
+            line-height: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.8em;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background: #0056b3;
+        }
+
+        /* --- Project Details Section --- */
+        #details {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .detail-card {
+            background: var(--light-color);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .detail-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .detail-card h3 {
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .detail-card ul {
+            list-style: none;
+        }
+
+        .detail-card li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #ccc;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .detail-card li:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* --- Contact Section --- */
+        #contact {
+            padding: 80px 0;
+            background-color: #f4f7f6;
+        }
+
+        #contact h2 {
+            text-align: center;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        #contact p {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            background: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background: #1e7e34;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: var(--dark-color);
+            color: var(--light-color);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo-placeholder">
+            <img src="logo.png" alt="ELAN 49 Official Logo" style="height: 50px;">
+        </div>
+        <div class="header-contact" style="display: flex; gap: 20px; align-items: center; font-weight: 600;">
+            <!-- Phone -->
+            <a href="tel:+918377033060" style="color: var(--dark-color); text-decoration: none; display: flex; align-items: center;">
+                <img src="https://img.icons8.com/ios-filled/24/000000/phone.png" alt="Phone Icon" style="margin-right: 5px;">
+                +91 8377033060
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/918377033060" target="_blank" style="color: #25D366; text-decoration: none; display: flex; align-items: center;">
+                <img src="https://img.icons8.com/ios-filled/24/25D366/whatsapp.png" alt="WhatsApp Icon" style="margin-right: 5px;">
+                Chat on WhatsApp
+            </a>
+        </div>
+    </div>
+</header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ELAN 49</h1>
+            <p>Launching New Luxury Apartments on Sohna Road, Sector 49
+            </p>
+            <p>3, 4 & 5 BHK Apartments | 41,000+ sq ft Clubhouse Equipped
+            </p>
+            <a href="#contact" class="cta-button">Connect Now For More Information</a>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; color: var(--primary-color);">Project Highlights</h2>
+            <div class="details-grid">
+
+                <div class="detail-card">
+                    <h3>Key Facts</h3>
+                    <ul>
+                        <li><span class="label">Location:</span> <span>New Launch on Sohna Road, Sector 49</span></li>
+                        <li><span class="label">Proximity:</span> <span>Adjacent to Vatika Business Park</span></li>
+                        <li><span class="label">Developer:</span> <span>A+ Grade Developer</span></li>
+                        <li><span class="label">Total Site Area:</span> <span>6 Acres</span></li>
+                        <li><span class="label">Launch Expected:</span> <span>Around November</span></li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Configuration</h3>
+                    <ul>
+                        <li><span class="label">Total Units:</span> <span>350 Apartments</span></li>
+                        <li><span class="label">Tower Height:</span> <span>G + 36 Floors</span></li>
+                        <li><span class="label">Apartment Type:</span> <span>Only 4BHK’s</span></li>
+                        <li><span class="label">4BHK Size:</span> <span>4500 Sq.Ft.</span></li>
+                        <li><span class="label">Penthouse Size:</span> <span>8500 Sq.Ft.</span></li>
+                    </ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Exclusivity</h3>
+                    <ul>
+                        <li><span class="label">Density:</span> <span>Low Density Project</span></li>
+                        <li><span class="label">Floor Layout:</span> <span>Only 2 Apartments on each floor</span></li>
+                        <li><span class="label">Furnishing:</span> <span>Semi-furnished apartments</span></li>
+                        <li><span class="label">View:</span> <span>Golf Course Overlook (Implied)</span></li>
+                        <li><span class="label">Status:</span> <span>Pre-Launch Opportunity</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Connect Now</h2>
+            <p>Get the latest floor plans, pricing, and launch details before the public release.</p>
+            
+            <div class="contact-form">
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="Name">Full Name</label>
+      <input type="text" id="name" name="Name" required>
+    </div>
+    <div class="form-group">
+      <label for="Phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone" required>
+    </div>
+    <!-- Hidden static field (not visible on page) -->
+    <input type="hidden" name="ProjectName" value="Elan Sector 49">
+    <button type="submit" class="submit-button">Request Information</button>
+  </form>
+  <div id="success-message" style="display:none; color:green; margin-top:10px;">
+    Thank you! Your information has been submitted.
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('success-message');
+  const scriptURL = "https://script.google.com/macros/s/AKfycbx8K4kmAorq51co42TToz-28XjsbNRP6ZKgUoZUueCHUrR0Gca1sOes4HoD0ZM0r_8/exec"; // Replace with your Apps Script URL
+
+  form.addEventListener('submit', e => {
+    e.preventDefault(); // Prevent default form submission
+
+    // Collect form data
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    // Send data to Google Sheet
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new URLSearchParams(data)
+    })
+    .then(response => {
+      if (response.ok) {
+        // Show success message
+        successMessage.style.display = 'block';
+        form.reset(); // Reset form fields
+      } else {
+        alert('Error submitting form. Please try again.');
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      alert('Error submitting form. Please try again.');
+    });
+  });
+</script>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ELAN 49. All rights reserved. | Disclaimer: This is a pre-launch informational website.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
